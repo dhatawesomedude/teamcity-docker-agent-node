@@ -10,7 +10,7 @@ RUN export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm" \
 # required for node-git
 RUN sudo add-apt-repository ppa:ubuntu-toolchain-r/test \
     sudo apt-get update \
-    sudo apt-get install libstdc++-4.9-de \
+    sudo apt-get install libstdc++-4.9-dev \
 
 # Install several versions of node
 RUN nvm install 8
